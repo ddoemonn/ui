@@ -1,6 +1,9 @@
 import "@/styles/globals.css"
 import { Metadata, Viewport } from "next"
 
+
+import {ReactTreeProvider} from "react-tree-lens"
+
 import { META_THEME_COLORS, siteConfig } from "@/config/site"
 import { fontMono, fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
@@ -104,9 +107,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableColorScheme
           >
             <div vaul-drawer-wrapper="">
+            <ReactTreeProvider 
+      showTreeViewer={true}
+      position="left"
+      theme="light"
+    >
               <div className="relative flex min-h-svh flex-col bg-background">
                 {children}
               </div>
+
+            </ReactTreeProvider>
             </div>
             <TailwindIndicator />
             <ThemeSwitcher />

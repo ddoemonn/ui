@@ -84,6 +84,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.44.2",
     "react-resizable-panels": "^2.0.22",
+    "react-tree-lens": "^1.1.1",
     "react-wrap-balancer": "^0.4.1",
     "recharts": "2.12.7",
     "shadcn": "2.5.0",
